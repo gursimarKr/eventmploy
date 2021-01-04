@@ -1,5 +1,6 @@
 import React from 'react';
 import DashboardHeader from './snippet/DashboardHeader';
+import { Link } from 'react-router-dom';
 
 const Conversations = () => {
     return(
@@ -207,7 +208,7 @@ const Conversations = () => {
 										<strong className="text-truncate w-100">Elise Beverley</strong>
 										<span className="d-none d-md-block">3rd March 2021</span>
 									</div>
-									<a href="#" className="btn btn-primary py-0 btn-hired">HIRED NOW</a>
+									<Link to="/" className="btn btn-primary py-0 btn-hired">HIRED NOW</Link>
 								</div>
 
 								<div className="chat-messages">

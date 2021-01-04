@@ -5,8 +5,8 @@ import userIcon from '../assets/images/user-icon.png';
 import DashboardHeader from './snippet/DashboardHeader';
 
 const EventOrganizerPlan = () => {
-    return(
-        <>
+    return(<>
+        <DashboardHeader/>
 		<main className="page-dashboard">
 			<div className="container-fluid">
 				<div className="row page-info mb-100">
@@ -50,7 +50,6 @@ const EventOrganizerPlan = () => {
 				</div>
 			</div>
 		</main>
-        </>
-    )
+    </>)
 }
 export default EventOrganizerPlan

@@ -11,7 +11,7 @@ const Payment = () => {
         <Header/>
 		<main className="page-access">
 			<div className="page-image" style={{backgroundImage: `url(${signup})`}}>
-				<img src={signupMob} className="w-100 d-block d-md-none" alt="image" />
+				<img src={signupMob} className="w-100 d-block d-md-none" alt="banner" />
 			</div>
 			<div className="container container-xxl">
 				<div className="row no-gutters">

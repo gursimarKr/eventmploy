@@ -1,10 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import Slider from "react-slick";
+import React from 'react';
 
 const CommentSlider = () => {
     return(
         <>
-         <Slider {...settings}>
       <div>
         <h3>1</h3>
       </div>
@@ -23,7 +21,6 @@ const CommentSlider = () => {
       <div>
         <h3>6</h3>
       </div>
-    </Slider>
         </>
     )
 }

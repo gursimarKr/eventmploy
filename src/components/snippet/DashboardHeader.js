@@ -28,7 +28,7 @@ const DashboardHeader = () => {
 				
 				<h6>Me</h6>
 				<ul className="list-unstyled">
-					<li><Link href="/my-ratings">My Ratings</Link></li>
+					<li><Link to="/my-ratings">My Ratings</Link></li>
 					<li><Link to="/make-rating">Leave Rating</Link></li>
 					<li><Link to="/calendar">My Calendar</Link></li>
 					<li><Link to="/plans">Active Plan</Link></li>
@@ -57,7 +57,7 @@ const DashboardHeader = () => {
 			  </div>
 			  <input type="text" className="form-control border-0 bg-transparent" placeholder="Search here" />
 			</form>
-			<a className="navbar-brand d-block d-md-none p-md-0" href="#">
+			<a className="navbar-brand d-block d-md-none p-md-0" href="/">
 			  	<img src={logoSm} alt="logo" />
 			</a>
 

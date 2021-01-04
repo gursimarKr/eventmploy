@@ -1,7 +1,7 @@
 import React from 'react';
 import fewMoreDetails from '../assets/images/few-more-details.png';
 import fewDetailsMob from '../assets/images/few-details-mob.png';
-import dots from '../assets/images/dots.png';
+//import dots from '../assets/images/dots.png';
 import Header from './snippet/Header';
 import Footer from './snippet/Footer';
 

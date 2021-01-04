@@ -24,7 +24,7 @@ const Homepage = () => {
 				</div>
 			</div>
 
-			<div className="modal fade" id="modalFilter" tabindex="-1" aria-labelledby="modalFilterLabel" aria-hidden="true">
+			<div className="modal fade" id="modalFilter" tabIndex="-1" aria-labelledby="modalFilterLabel" aria-hidden="true">
 			  <div className="modal-dialog modal-dialog-centered">
 			    <div className="modal-content">
 			      <div className="modal-header border-0">
@@ -107,7 +107,7 @@ const Homepage = () => {
 				<div className="container">
 					<div className="section-title align-items-center align-items-md-start flex-wrap flex-sm-nowrap d-flex text-secondary justify-content-between">
 						<h2><span>Event professionals</span> near you looking for work</h2>
-						<a href="#" className="btn btn-link nowrap mt-1 ml-auto mt-lg-2 p-0">start a new search <i className="fas fa-arrow-right ml-2"></i></a>
+						<a href="/" className="btn btn-link nowrap mt-1 ml-auto mt-lg-2 p-0">start a new search <i className="fas fa-arrow-right ml-2"></i></a>
 					</div>
 
 					<div className="section-hscroll overflow-auto d-flex flex-nowrap">
@@ -171,10 +171,10 @@ const Homepage = () => {
 					<div className="section-tabs">
 						<ul className="nav nav-pills" id="pills-tab" role="tablist">
 						  <li className="nav-item" role="presentation">
-						    <a className="nav-link active" id="pills-organiser-tab" data-toggle="pill" href="#pills-organiser" role="tab" aria-controls="pills-organiser" aria-selected="true">Organiser</a>
+						    <a className="nav-link active" id="pills-organiser-tab" data-toggle="pill" href="/pills-organiser" role="tab" aria-controls="pills-organiser" aria-selected="true">Organiser</a>
 						  </li>
 						  <li className="nav-item" role="presentation">
-						    <a className="nav-link" id="pills-freelancer-tab" data-toggle="pill" href="#pills-freelancer" role="tab" aria-controls="pills-freelancer" aria-selected="false">Freelancer</a>
+						    <a className="nav-link" id="pills-freelancer-tab" data-toggle="pill" href="/pills-freelancer" role="tab" aria-controls="pills-freelancer" aria-selected="false">Freelancer</a>
 						  </li>
 						</ul>
 						<div className="tab-content" id="pills-tabContent">
@@ -289,13 +289,10 @@ const Homepage = () => {
 							</div>
 							<div className="col-lg-8">
                             
-
-
 								<div className="testimonial_outer">
-									<div className="owl-carousel owl-testimonial owl-theme">
                                     <OwlCarousel
-                                        items = {10} 
-                                       	classNameName="owl-theme"  
+                                        items = {1} 
+                                       	className="owl-theme"  
                                         loop  
                                         margin = {1}
                                        	nav
@@ -341,7 +338,6 @@ const Homepage = () => {
 											</div>
 									    </div>
 									</OwlCarousel>
-                                    </div>
 								</div>
 							</div>
 						</div>
@@ -350,7 +346,7 @@ const Homepage = () => {
 
 					<div className="section-title d-flex flex-wrap text-secondary justify-content-between">
 						<h2><span>Event gigs</span> near you</h2>
-						<a href="#" className="btn btn-link ml-auto mt-1 mt-lg-2 p-0">start a new search <i className="fas fa-arrow-right ml-2"></i></a>
+						<a href="/" className="btn btn-link ml-auto mt-1 mt-lg-2 p-0">start a new search <i className="fas fa-arrow-right ml-2"></i></a>
 					</div>
 					<div className="section-hscroll overflow-auto d-flex flex-nowrap">
 						<div className="event-card event-blue-card">

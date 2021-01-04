@@ -1,8 +1,10 @@
 import React from 'react';
+import DashboardHeader from './snippet/DashboardHeader';
 
 const ProfileChangePassword = () => {
     return(
         <>
+		<DashboardHeader/>
         <main className="page-dashboard">
 			<div className="container-fluid">
 				<div className="row page-info mb-4">
@@ -17,7 +19,7 @@ const ProfileChangePassword = () => {
 						<div className="profile-card d-flex flex-column align-items-center text-center">
 							<div className="position-relative">
 								<input type="file" id="pic_upload" hidden />
-								<label for="pic_upload" className="pic_upload position-absolute p-0 btn btn-primary"><i className="fas fa-upload"></i></label>
+								<label htmlFor="pic_upload" className="pic_upload position-absolute p-0 btn btn-primary"><i className="fas fa-upload"></i></label>
 								<div className="contact-auth">nb</div>
 							</div>
 
@@ -26,8 +28,8 @@ const ProfileChangePassword = () => {
 						</div>
 
 						<div className="list-group">
-						  <a href="#" className="list-group-item list-group-item-action"><i className="fas fa-user"></i> Personal Information</a>
-						  <a href="#" className="list-group-item list-group-item-action"><i className="fas fa-lock"></i> Change Password</a>
+						  <a href="/" className="list-group-item list-group-item-action"><i className="fas fa-user"></i> Personal Information</a>
+						  <a href="/" className="list-group-item list-group-item-action"><i className="fas fa-lock"></i> Change Password</a>
 						</div>
 					</div>
 					<div className="col-lg-12 col-md-8 col-xl-8">

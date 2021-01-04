@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import dots from '../assets/images/dots.png';
 import DashboardHeader from './snippet/DashboardHeader';
 
@@ -23,7 +24,7 @@ const Dashboard = () => {
 				</div>
 				<div className="section-hscroll dashboard-hscroll overflow-auto d-sm-flex flex-sm-nowrap">
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -34,7 +35,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -45,7 +46,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -56,7 +57,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -67,7 +68,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -78,7 +79,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -98,7 +99,7 @@ const Dashboard = () => {
 				</div>
 				<div className="section-hscroll dashboard-hscroll overflow-auto d-sm-flex flex-sm-nowrap">
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<a href="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -109,7 +110,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<Link to="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></Link>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -120,7 +121,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<Link to="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></Link>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -131,7 +132,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<Link to="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></Link>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -142,7 +143,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<Link to="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></Link>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">
@@ -153,7 +154,7 @@ const Dashboard = () => {
 						<img src={dots} className="event-dots event-dots-bottom" alt="dots" />
 					</div>
 					<div className="event-card event-gray-card">
-						<a href="#" className="event-card-chat"><i className="fas fa-comment-dots"></i></a>
+						<Link to="/" className="event-card-chat"><i className="fas fa-comment-dots"></i></Link>
 						<h3>Adam S.</h3>
 						<p><i className="fas fa-map-pin mr-2"></i> Sydney</p>
 						<div className="event-tags">

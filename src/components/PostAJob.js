@@ -4,6 +4,9 @@ import minus from '../assets/images/minus.png';
 import plus from '../assets/images/plus.png';
 
 const PostAJob = () => {
+	const handleChange = event => {
+
+	}
     return(
         <>
         <DashboardHeader/>
@@ -39,7 +42,7 @@ const PostAJob = () => {
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>Full Name</label>
-													<input type="text" className="form-control" value="Nicola Bond" />
+													<input type="text" onChange={event=>handleChange(event)} className="form-control" value="Nicola Bond" />
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
@@ -51,19 +54,19 @@ const PostAJob = () => {
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>ABN</label>
-													<input type="text" className="form-control" value="123-345-3455" />
+													<input type="text" className="form-control" onChange={event=>handleChange(event)} value="123-345-3455" />
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>Email Address</label>
-													<input type="email" className="form-control" value="test+organiser@test.com" />
+													<input type="email" className="form-control" onChange={event=>handleChange(event)} value="test+organiser@test.com" />
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-12">
 												<div className="form-field">
 													<label>Location</label>
-													<input type="email" className="form-control" value="Sydney, AU" />
+													<input type="email" className="form-control" onChange={event=>handleChange(event)} value="Sydney, AU" />
 												</div>
 											</div>
 											<div className="w-100 mb-sm-5"></div>
@@ -87,19 +90,19 @@ const PostAJob = () => {
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>Event Name</label>
-													<input type="text" className="form-control" value="Kids Party" />
+													<input type="text" className="form-control" onChange={event=>handleChange(event)} value="Kids Party" />
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>Event Dates</label>
-													<input type="text" className="form-control" value="02/12/2020 - 08/12/2020" />
+													<input type="text" className="form-control" onChange={event=>handleChange(event)} value="02/12/2020 - 08/12/2020" />
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-9">
 												<div className="form-field">
 													<label>Event Description</label>
-													<textarea className="form-control" rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan nibh ut velit vehicula, sit amet imperdiet velit laoreet. Pellentesque venenatis dictum odio. Duis posuere purus lacus, posuere aliquet dolor vulputate at. Duis nunc ex, pulvinar vel bibendum vel, porta vel arcu. Morbi velit enim, iaculis et interdum eu, pulvinar id nulla. Proin id turpis neque. Mauris eu lorem tempor, pharetra nibh sit amet, consectetur nisi.</textarea>
+													<textarea onChange={event=>handleChange(event)} className="form-control" rows="4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan nibh ut velit vehicula, sit amet imperdiet velit laoreet. Pellentesque venenatis dictum odio. Duis posuere purus lacus, posuere aliquet dolor vulputate at. Duis nunc ex, pulvinar vel bibendum vel, porta vel arcu. Morbi velit enim, iaculis et interdum eu, pulvinar id nulla. Proin id turpis neque. Mauris eu lorem tempor, pharetra nibh sit amet, consectetur nisi.</textarea>
 												</div>
 											</div>
 											<div className="form-group mb-md-4 mb-3 col-sm-3">
@@ -114,7 +117,7 @@ const PostAJob = () => {
 													  <div className="input-group-prepend">
 													    <button className="btn p-0" type="button"><img src={minus} alt="minus" /></button>
 													  </div>
-													  <input type="text" className="form-control text-center" value="1" />
+													  <input type="text" className="form-control text-center" onChange={event=>handleChange(event)} value="1" />
 													  <div className="input-group-append">
 													    <button className="btn p-0" type="button"><img src={plus} alt="plus" /></button>
 													  </div>
@@ -137,7 +140,7 @@ const PostAJob = () => {
 											<div className="form-group mb-md-4 mb-3 col-sm-6">
 												<div className="form-field">
 													<label>Job Location</label>
-													<input type="text" className="form-control" value="Sydney, NSW, AU" />
+													<input type="text" className="form-control" onChange={event=>handleChange(event)} value="Sydney, NSW, AU" />
 												</div>
 											</div>
 											<div className="w-100"></div>
@@ -168,7 +171,7 @@ const PostAJob = () => {
 												<label>Right to work in Australia</label>
 												<div className="form-switch text-uppercase">
 													<input type="checkbox" id="formSwitch1" hidden />
-													<label for="formSwitch1" className="d-flex align-items-center justify-content-between">
+													<label htmlFor="formSwitch1" className="d-flex align-items-center justify-content-between">
 														<span className="fs-no">No</span>
 														<span className="fs-yes">Yes</span>
 													</label>
@@ -178,7 +181,7 @@ const PostAJob = () => {
 												<label>Working with children check</label>
 												<div className="form-switch text-uppercase">
 													<input type="checkbox" id="formSwitch2" hidden checked />
-													<label for="formSwitch2" className="d-flex align-items-center justify-content-between">
+													<label htmlFor="formSwitch2" className="d-flex align-items-center justify-content-between">
 														<span className="fs-no">No</span>
 														<span className="fs-yes">Yes</span>
 													</label>
@@ -188,7 +191,7 @@ const PostAJob = () => {
 												<label>Australian Driving License</label>
 												<div className="form-switch text-uppercase">
 													<input type="checkbox" id="formSwitch3" hidden checked />
-													<label for="formSwitch3" className="d-flex align-items-center justify-content-between">
+													<label htmlFor="formSwitch3" className="d-flex align-items-center justify-content-between">
 														<span className="fs-no">No</span>
 														<span className="fs-yes">Yes</span>
 													</label>
@@ -198,7 +201,7 @@ const PostAJob = () => {
 												<label>Current Police Check</label>
 												<div className="form-switch text-uppercase">
 													<input type="checkbox" id="formSwitch4" hidden />
-													<label for="formSwitch4" className="d-flex align-items-center justify-content-between">
+													<label htmlFor="formSwitch4" className="d-flex align-items-center justify-content-between">
 														<span className="fs-no">No</span>
 														<span className="fs-yes">Yes</span>
 													</label>
@@ -208,7 +211,7 @@ const PostAJob = () => {
 												<label>Australian Business Number (ABN)</label>
 												<div className="form-switch text-uppercase">
 													<input type="checkbox" id="formSwitch5" hidden />
-													<label for="formSwitch5" className="d-flex align-items-center justify-content-between">
+													<label htmlFor="formSwitch5" className="d-flex align-items-center justify-content-between">
 														<span className="fs-no">No</span>
 														<span className="fs-yes">Yes</span>
 													</label>
@@ -235,43 +238,43 @@ const PostAJob = () => {
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification1"/>
-																		  <label className="custom-control-label" for="checkQualification1">No Certifications Required</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification1">No Certifications Required</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification2"/>
-																		  <label className="custom-control-label" for="checkQualification2">Chief Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification2">Chief Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification3"/>
-																		  <label className="custom-control-label" for="checkQualification3">Elevated Work Platform</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification3">Elevated Work Platform</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification4"/>
-																		  <label className="custom-control-label" for="checkQualification4">First Aid</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification4">First Aid</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification5"/>
-																		  <label className="custom-control-label" for="checkQualification5">Forklift</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification5">Forklift</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification6"/>
-																		  <label className="custom-control-label" for="checkQualification6">Safety Accreditation</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification6">Safety Accreditation</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification7"/>
-																		  <label className="custom-control-label" for="checkQualification7">Assistant Stage Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification7">Assistant Stage Manager</label>
 																		</div>
 																	</div>
 																</div>
@@ -283,115 +286,115 @@ const PostAJob = () => {
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills1"/>
-																		  <label className="custom-control-label" for="checkSkills1">No Certifications Required</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills1">No Certifications Required</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills2"/>
-																		  <label className="custom-control-label" for="checkSkills2">Chief Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills2">Chief Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills3"/>
-																		  <label className="custom-control-label" for="checkSkills3">Elevated Work Platform</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills3">Elevated Work Platform</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills4"/>
-																		  <label className="custom-control-label" for="checkSkills4">Lighting Technician</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills4">Lighting Technician</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills5"/>
-																		  <label className="custom-control-label" for="checkSkills5">General Hand / Site Crew</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills5">General Hand / Site Crew</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills6"/>
-																		  <label className="custom-control-label" for="checkSkills6">Production Assistant</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills6">Production Assistant</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills7"/>
-																		  <label className="custom-control-label" for="checkSkills7">Merchandise Seller</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills7">Merchandise Seller</label>
 																		</div>
 													  				</div>
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills8"/>
-																		  <label className="custom-control-label" for="checkSkills8">First Aid</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills8">First Aid</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills9"/>
-																		  <label className="custom-control-label" for="checkSkills9">Forklift</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills9">Forklift</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills10"/>
-																		  <label className="custom-control-label" for="checkSkills10">Safety Accreditation</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills10">Safety Accreditation</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills11"/>
-																		  <label className="custom-control-label" for="checkSkills11">Site Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills11">Site Manager</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills12"/>
-																		  <label className="custom-control-label" for="checkSkills12">Communications Officer</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills12">Communications Officer</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills13"/>
-																		  <label className="custom-control-label" for="checkSkills13">Production Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills13">Production Manager</label>
 																		</div>
 													  				</div>
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills14"/>
-																		  <label className="custom-control-label" for="checkSkills14">Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills14">Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills15"/>
-																		  <label className="custom-control-label" for="checkSkills15">Usher</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills15">Usher</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills16"/>
-																		  <label className="custom-control-label" for="checkSkills16">Ticket Seller</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills16">Ticket Seller</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills17"/>
-																		  <label className="custom-control-label" for="checkSkills17">Sound Technician</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills17">Sound Technician</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills18"/>
-																		  <label className="custom-control-label" for="checkSkills18">Safety Officer</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills18">Safety Officer</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills19"/>
-																		  <label className="custom-control-label" for="checkSkills19">Stage Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills19">Stage Manager</label>
 																		</div>
 													  				</div>
 													  			</div>
@@ -407,43 +410,43 @@ const PostAJob = () => {
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification01"/>
-																		  <label className="custom-control-label" for="checkQualification01">No Certifications Required</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification01">No Certifications Required</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification02"/>
-																		  <label className="custom-control-label" for="checkQualification02">Chief Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification02">Chief Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification03"/>
-																		  <label className="custom-control-label" for="checkQualification03">Elevated Work Platform</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification03">Elevated Work Platform</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification04"/>
-																		  <label className="custom-control-label" for="checkQualification04">First Aid</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification04">First Aid</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification05"/>
-																		  <label className="custom-control-label" for="checkQualification05">Forklift</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification05">Forklift</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification06"/>
-																		  <label className="custom-control-label" for="checkQualification06">Safety Accreditation</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification06">Safety Accreditation</label>
 																		</div>
 																	</div>
 																	<div className="col-6 col-md-12">
 															  			<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkQualification07"/>
-																		  <label className="custom-control-label" for="checkQualification07">Assistant Stage Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkQualification07">Assistant Stage Manager</label>
 																		</div>
 																	</div>
 																</div>
@@ -455,115 +458,115 @@ const PostAJob = () => {
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills01"/>
-																		  <label className="custom-control-label" for="checkSkills01">No Certifications Required</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills01">No Certifications Required</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills02"/>
-																		  <label className="custom-control-label" for="checkSkills02">Chief Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills02">Chief Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills03"/>
-																		  <label className="custom-control-label" for="checkSkills03">Elevated Work Platform</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills03">Elevated Work Platform</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills04"/>
-																		  <label className="custom-control-label" for="checkSkills04">Lighting Technician</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills04">Lighting Technician</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills05"/>
-																		  <label className="custom-control-label" for="checkSkills05">General Hand / Site Crew</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills05">General Hand / Site Crew</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills06"/>
-																		  <label className="custom-control-label" for="checkSkills06">Production Assistant</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills06">Production Assistant</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills07"/>
-																		  <label className="custom-control-label" for="checkSkills07">Merchandise Seller</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills07">Merchandise Seller</label>
 																		</div>
 													  				</div>
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills08"/>
-																		  <label className="custom-control-label" for="checkSkills08">First Aid</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills08">First Aid</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills09"/>
-																		  <label className="custom-control-label" for="checkSkills09">Forklift</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills09">Forklift</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills010"/>
-																		  <label className="custom-control-label" for="checkSkills010">Safety Accreditation</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills010">Safety Accreditation</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills011"/>
-																		  <label className="custom-control-label" for="checkSkills011">Site Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills011">Site Manager</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills012"/>
-																		  <label className="custom-control-label" for="checkSkills012">Communications Officer</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills012">Communications Officer</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills013"/>
-																		  <label className="custom-control-label" for="checkSkills013">Production Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills013">Production Manager</label>
 																		</div>
 													  				</div>
 													  				<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills014"/>
-																		  <label className="custom-control-label" for="checkSkills014">Warden</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills014">Warden</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills015"/>
-																		  <label className="custom-control-label" for="checkSkills015">Usher</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills015">Usher</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills016"/>
-																		  <label className="custom-control-label" for="checkSkills016">Ticket Seller</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills016">Ticket Seller</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills017"/>
-																		  <label className="custom-control-label" for="checkSkills017">Sound Technician</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills017">Sound Technician</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills018"/>
-																		  <label className="custom-control-label" for="checkSkills018">Safety Officer</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills018">Safety Officer</label>
 																		</div>
 																	</div>
 																	<div className="col-md-4 col-6">
 													  					<div className="custom-control mb-2 custom-checkbox">
 																		  <input type="checkbox" className="custom-control-input" id="checkSkills019"/>
-																		  <label className="custom-control-label" for="checkSkills019">Stage Manager</label>
+																		  <label className="custom-control-label" htmlFor="checkSkills019">Stage Manager</label>
 																		</div>
 													  				</div>
 													  			</div>

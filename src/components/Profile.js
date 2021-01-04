@@ -20,7 +20,7 @@ const Profile = () => {
 						<div className="profile-card d-flex flex-column align-items-center text-center">
 							<div className="position-relative">
 								<input type="file" id="pic_upload" hidden />
-								<label for="pic_upload" className="pic_upload position-absolute p-0 btn btn-primary"><i className="fas fa-upload"></i></label>
+								<label htmlFor="pic_upload" className="pic_upload position-absolute p-0 btn btn-primary"><i className="fas fa-upload"></i></label>
 								<div className="contact-auth">nb</div>
 							</div>
 

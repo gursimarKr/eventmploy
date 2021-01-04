@@ -16,32 +16,32 @@ class Header extends Component {
 
     render() {
         return(
-            <header class="header w-100 position-absolute">
-			<div class="container container-xxl">
-				<nav class="navbar p-0 navbar-expand-md">
-				  <Link class="navbar-brand p-md-0" to="/">
-				  	<img src={logo} class="d-md-block d-none" alt="logo" />
-				  	<img src={logoSm} class="d-md-none d-block" alt="logo" />
+            <header className="header w-100 position-absolute">
+			<div className="container container-xxl">
+				<nav className="navbar p-0 navbar-expand-md">
+				  <Link className="navbar-brand p-md-0" to="/">
+				  	<img src={logo} className="d-md-block d-none" alt="logo" />
+				  	<img src={logoSm} className="d-md-none d-block" alt="logo" />
 				  </Link>
-				  <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"><img src="images/menu-bars.png" class="d-block" alt="bar" /></span>
+				  <button className="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span className="navbar-toggler-icon"><img src="images/menu-bars.png" className="d-block" alt="bar" /></span>
 				  </button>
 
-				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				    <ul class="navbar-nav ml-auto">
-				      <li class="nav-item active">
+				  <div className="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul className="navbar-nav ml-auto">
+				      <li className="nav-item active">
 				        <Link className="nav-link" to="/">home</Link>
 				      </li>
-				      <li class="nav-item">
+				      <li className="nav-item">
 				        <Link className="nav-link" to="/jobs">jobs</Link>
 				      </li>
-				      <li class="nav-item">
+				      <li className="nav-item">
 				        <Link className="nav-link" to="/post">post a job</Link>
 				      </li>
 				      <li className="nav-item">
-				        <Link class="nav-link" to="/blog">blog</Link>
+				        <Link className="nav-link" to="/blog">blog</Link>
 				      </li>
-				      <li class="nav-item">
+				      <li className="nav-item">
 				        <Link className="nav-link" to="/login">login</Link>
 				      </li>
 				    </ul>

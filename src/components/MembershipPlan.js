@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const MembershipPlan = () => {
     return(
         <>
-        {/* <DashboardHeader/> */}
+       <DashboardHeader/>
 		<main className="page-dashboard">
 			<div className="container-fluid">
 				<div className="row page-info mb-100">

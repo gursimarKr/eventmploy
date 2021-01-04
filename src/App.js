@@ -3,8 +3,8 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import './App.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import Homepage from './components/Homepage';
 import SignUp from "./components/SignUp";
 import Login from "./components/Login";
@@ -23,11 +23,18 @@ import GetStarted from './components/GetStarted';
 import MembershipPlan from './components/MembershipPlan';
 import ForgotPassword from './components/ForgotPassword';
 import FewMoreDetails from './components/FewMoreDetails';
-import JobsRequestedFreelancer from './components/Freelancer/JobsRequestedFreelancer';
-import MembershipPlanFreelancer from "./components/Freelancer/MembershipPlanFreelancer";
 import Payment from "./components/Payment";
 import Dashboard from "./components/Dashboard";
-
+import SiteMap from "./components/SiteMap";
+import AcceptedJobsFreelancer from './components/Freelancer/AceeptedJobsFreelancer';
+import CompletedJobsFreelancer from './components/Freelancer/CompletedJobsFreelancer';
+import DashboardFreelancer from './components/Freelancer/DashboardFreelancer';
+import JobsRequestedFreelancer from './components/Freelancer/JobsRequestedFreelancer';
+import MembershipPlanFreelancer from './components/Freelancer/MembershipPlanFreelancer';
+import NotificationFreelancer from './components/Freelancer/NotificationFreelancer';
+import ProfileChangeFreelancer from './components/Freelancer/ProfileChangeFreelancer';
+import ProfileFreelancer from './components/Freelancer/ProfileFreelancer';
+import ProfileCompleteFreelancer from './components/Freelancer/ProfileCompleteFreelancer';
 function App() {
   return (
     <Router>
@@ -54,6 +61,17 @@ function App() {
           <Route path="/forgot-password" component={ForgotPassword}/>
           <Route path="/personal-information" component={FewMoreDetails}/>
           <Route path="/current-jobs" component={CurrentJobs}/>
+          <Route path="/site-map" component={SiteMap}/>
+          
+          <Route path="/AcceptedJobsFreelancer" component={AcceptedJobsFreelancer}/>
+          <Route path="/CompletedJobsFreelancer" component={CompletedJobsFreelancer}/>
+          <Route path="/DashboardFreelancer" component={DashboardFreelancer}/>
+          <Route path="/JobsRequestedFreelancer" component={JobsRequestedFreelancer}/>
+          <Route path="/MembershipPlanFreelancer" component={MembershipPlanFreelancer}/>
+          <Route path="/NotificationFreelancer" component={NotificationFreelancer}/>
+          <Route path="/ProfileChangeFreelancer" component={ProfileChangeFreelancer}/>
+          <Route path="/ProfileFreelancer" component={ProfileFreelancer}/>
+          <Route path="/ProfileCompleteFreelancer" component={ProfileCompleteFreelancer}/>
           
           <Route path="/event-organizer-plan" component={EventOrganizerPlan}/>
         </Switch>

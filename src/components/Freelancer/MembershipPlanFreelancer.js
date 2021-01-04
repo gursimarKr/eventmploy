@@ -2,11 +2,12 @@ import React from 'react';
 import dots from '../../assets/images/dots.png';
 import userIcon from '../../assets/images/user-icon.png';
 import monthly from '../../assets/images/monthly.png';
+import DashboardHeader from '../snippet/DashboardHeader';
 
 const MembershipPlanFreelancer = () => {
     return(
         <>
-        
+        <DashboardHeader/>
 		<main className="page-dashboard">
 			<div className="container-fluid">
 				<div className="row page-info mb-100">

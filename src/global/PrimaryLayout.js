@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 
 
 // snipet
-import Header from '../components/snippets/Header';
-import Footer from '../components/snippets/Footer';
+import Header from '../components/snippet/Header';
+import Footer from '../components/snippet/Footer';
+import DashboardHeader from '../components/snippet/DashboardHeader';
 
 
 class Primarylayout extends Component {
@@ -18,7 +19,7 @@ class Primarylayout extends Component {
         return (
             <div id="wrapper">
             
-                {this.state.Auth ? null : <Header />}
+                {this.state.Auth ? <DashboardHeader/> : <Header />}
                 
                 {this.props.children}
 
