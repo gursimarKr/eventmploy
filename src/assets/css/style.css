@@ -1585,3 +1585,6 @@ button:focus, input:focus {
 .input-group-pay .form-control{
   line-height: 1;
 }
+.page-access  .container-xxl {
+    max-width: 1170px;
+}
